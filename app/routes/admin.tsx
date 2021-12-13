@@ -16,7 +16,9 @@ export default function Admin() {
   return (
     <div className="admin">
       <nav>
-        <h1>Admin</h1>
+        <Link to="/admin">
+          <h1>Admin</h1>
+        </Link>
         <ul>
           {posts.map((post) => (
             <li key={post.slug}>
